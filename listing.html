@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="css/fontawesome.min.css" type="text/css">
+</head>
+
+<body>
+    <nav class="nav navbar-white" id="navBar">
+        <a href="index.html" class="logo">Trip Stay</a>
+        <ul class="nav__list">
+            <li><a href="index.html" >Popular Places</a></li>
+            <li><a href="places.html">Travel Outside</a></li>
+            <li><a class="active" href="listing.html">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Now</a>
+        <i class="fas fa-bars" onclick="togglebtn()"></i>
+    </nav>
+
+    <div class="house__details">
+        <div class="house__title">
+            <h1>ECR Villa</h1>
+            <div class="row">
+                <div>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star-half-alt rating"></i>
+                    <i class="far fa-star rating "></i>
+                    <span>155 Reviews</span>
+                </div>
+                <div>
+                    <p><b>Location:</b>No.123Garden East Coast Road, Kovalam,Tamil Nadu, Chennai</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="images/places/7.jpg"></div>
+            <div><img src="images/places/11.jpg"></div>
+            <div><img src="images/places/12.jpg"></div>
+            <div><img src="images/places/13.jpg"></div>
+            <div><img src="images/places/14.jpg"></div>
+        </div>
+        <div class="small-details">
+            <h2>Entire Rental Unit hosted by Vijay</h2>
+            <p>2 Guest &nbsp; &nbsp;2 Bedroom &nbsp; &nbsp; 1 Bathroom</p>
+            <h4> ₹3k / Day</h4>
+        </div>
+        <hr class="line">
+        <form class="check-form">
+            <div>
+                <label>Check-In</label>
+                <input type="text" placeholder="Add Date">
+            </div>
+            <div>
+                <label>Check-Out</label>
+                <input type="text" placeholder="Add Date">
+            </div>
+            <div class="guest-field">
+                <label>Guest</label>
+                <input type="text" placeholder="2 Guest">
+            </div>
+            
+            <button type="submit">Check Availability</button>
+
+        </form>
+
+        <ul class="details-list">
+            <li class="list"><i class="fas fa-home icon"></i>Entire Home<span>You will have the entire House for you to
+                    stay.</span></li>
+            <li class="list"><i class="fas fa-paint-brush icon"></i>Enhanced Cleaning<span>This host has committed to
+                    TripStay's Cleaning Process</span></li>
+            <li class="list"><i class="fas fa-map-marker-alt icon"></i>Great Location<span>80% of recent guests gave the
+                    location a 5 star rating</span></li>
+            <li class="list"><i class="fas fa-heart icon"></i>Great Check-in Experience<span>100% of recent guests gave
+                    the Check-in process a 5 star rating.</span></li>
+        </ul>
+        <hr class="line">
+        <p class=home__desc style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Guest will be allocated on the ground floor according to availability.You get a comfortable
+            Two Bedroom
+            apartment has a true city feeling.The price is quoted for two guest, at the guest slot please mark the
+            number of guests to get the extra price for groups.The guest will be allocated groud floor according to
+            availability. you get the comfortable two bedrrom apartment that has a true city feeling.</p>
+        <hr class="line">
+        <div class="map">
+            <h3>Location on Map</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13087.007262537256!2d80.24239100434937!3d12.7921040549541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52504501360969%3A0xa6d519897b7d441a!2sKovalam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1641556918997!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <b>No.123Garden East Coast Road, Kovalam,Tamil Nadu, Chennai</b>
+                <p>It's Like a home away from home.</p>
+        </div>
+        <hr class="line">
+
+        <div class="host">
+            <img src="images/places/host2.jpg">
+            <div>
+                <h2>Hosted by Vijay</h2>
+                <p>
+                    <span>
+                        <i class="fas fa-star icon"></i>
+                        <i class="fas fa-star icon"></i>
+                        <i class="fas fa-star icon"></i>
+                        <i class="fas fa-star icon"></i>
+                        <i class="fas fa-star-half-alt icon"></i>
+                    </span>&nbsp; &nbsp; 245 reviews &nbsp; &nbsp; response rate 100% &nbsp; &nbsp; Response Time:60min 
+                </p>
+            </div>
+        </div>
+        <a href="#" class="contact-host">Contact Host</a>
+    </div>
+
+    <div class="footer">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+
+        <hr>
+        <p>Copyright &copy;
+            <script>var year = new Date(); document.write(year.getFullYear());</script>,Vijay Template.
+        </p>
+    </div>
+    </div>
+    <script>
+        var navBar = document.getElementById("navBar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hide-menu");
+        }
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+</body>
+
+</html>
