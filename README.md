@@ -9,7 +9,7 @@ Scroll below to view the Preview Image of this website
   
 - 3 pages of website,
     - 1 - First Page of this website is Home page, It has searchBar in the middle of Banner Section.
-       - Exclusive trips section, 
+       - Exclusive offers about the trips with the budget section, 
        - Popular Tourist places Section, 
        - Travellers Review about the famous tourist places,
     - 2 - Second page of this website has List of Properties for Rent,
