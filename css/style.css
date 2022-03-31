@@ -1,0 +1,743 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popppins', sans-serif;
+  }
+  html{
+  scroll-behavior: smooth;
+  }
+
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/banner3.jpg);
+    background-size: cover;
+    background-position: center;  
+  }
+  .nav{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 7%;
+  }
+  .logo{
+    width: 140px;
+    cursor: pointer;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .active{
+    position: relative;
+  }
+  .active::after{
+    content: '';
+    background: #fff;
+    width: 35px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+
+  }
+  .nav__list li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+  }
+  .nav__list li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .register-btn{
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+.container{
+  padding:0 7%;
+  
+}
+.header h1{
+  font-size: 4vw;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  padding-top: 20%;
+}
+.search-bar{
+  background: #fff;
+  width: 70%;
+  margin: 30px auto;
+  padding: 6px 10px 6px 30px;
+  border-radius: 50px;
+}
+.search-bar form{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search-bar form input{
+  display:  block;
+  border: 0;
+  outline: none;
+  background: transparent;
+  margin-top: 5px;
+}
+.search-bar form button{
+  background: #ff5361;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.location-input{
+  flex: 1;
+}
+.search-bar form label{
+  font-weight: 600;
+}
+
+/*============ EXCLUSIVE =========*/
+.subtitle{
+  margin: 50px 0 20px;
+  font-size: 2.2vw;
+  font-weight: 500;
+  color: #333;
+}
+.exclusive{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  grid-gap: 30px;
+}
+.exclusive div img{
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+.exclusive div{
+ position: relative;
+}
+.exclusive div span{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ text-align: center;
+ color: #fff;
+}
+/************** TRENDING *****************/
+.trending{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+.trending div img{
+  width: 100%;
+  height: 350px;
+  border-radius:10px;
+}
+/*************** CTA ******************/
+.cta{
+  margin: 80px 0;
+  background-image: linear-gradient(to right,#3f2321,transparent),url(../images/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 7%;
+  color: #FFf; 
+} 
+.cta h3{
+  font-size: 3vw;
+  line-height: 4vw;
+  
+}
+.cta p{
+  font-size: 18px;
+}
+.cta-btn{
+  background: #ff5361;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: inline-block;
+} 
+/***************** TRAVELLER STORIES ******************/
+.stories{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;       
+}
+.stories div img{
+  width: 100%;
+  height: 550px;
+  border-radius: 10px;
+}
+.stories div{
+  position: relative;
+  text-align: center;
+}
+.stories  p{
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 26px;
+}
+.start-btn{
+  text-decoration: none;
+  background: #ff5361;
+  color: #fff;
+  width: 80%;
+  max-width: 350px;
+  display: block;
+  text-align: center;
+  margin: 60px auto;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+/*********** ABOUT MSG *************/
+.about-msg{
+  text-align: center;
+  margin: 80px 0;
+  color: #333;
+  font-size: 17px;
+}
+
+.about-msg h2{
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.footer{
+  margin:80px 0 10px;
+  text-align: center;
+}
+.footer a{
+  text-decoration: none;
+  color: #999;
+  font-size: 22px;
+  margin: 0 10px;
+}
+.footer hr{
+  background: #999;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  margin: 20px 0;
+}
+.footer p{
+  padding-bottom: 15px;
+}
+.fa-bars{
+  display: none;
+}
+/*********************  MEDIA QUERIES  ************************/
+@media only screen and (max-width:920px){
+  .logo{
+    font-size: 20px;
+  }
+   .nav__list li{
+     margin: 5px 15px;
+   }
+   .register-btn{
+     display: inline-block;
+     padding: 10px 15px;
+     
+   }
+}
+@media only screen and (max-width:800px){
+  .logo{
+    position: fixed;
+    top: 4%;
+    left: 7%;
+  }
+  .nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: inline-block;
+    padding: 80px 7% 0px;
+    background: #000;
+    text-align: right;
+    max-height: 80px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  .nav__list li {
+    margin: 0px 0px 20px 0px;
+    display: block;
+  } 
+  .register-btn{
+    margin: 0px 0 30px;
+    display: inline-block;
+  }
+  .fa-bars{
+    display: block;
+    position: fixed;
+    color: #fff;
+    top:4%;
+    right: 7%;
+    font-size: 28px;
+  }
+  .active::after{
+    left: -40px;
+    bottom: 50%;
+    transform: translate(0,50%);
+  }
+  .hide-menu{
+    max-height: 300px;
+  }
+  .header h1{
+    padding-top: 150px;
+    font-size: 7vw;
+  }
+  .search-bar{
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px 15px 30px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .search-bar form{
+    display: block;
+  }
+  .search-bar form input{
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom:10px;
+  }
+  .search-bar form button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+  }
+  .subtitle{
+    font-size: 6vw;
+  }
+  .cta{
+    padding: 15% 5%;
+  }
+  .cta h3{
+    font-size: 7vw;
+    line-height: 8vw;
+  }
+  .cta p{
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .cta-btn{
+    padding: 8px 25px;
+   border-radius: 4px;
+   margin-top: 10px;
+  }
+}
+
+/************ PLACES ****************/
+.navbar-white{
+  background: #FFF;
+  box-shadow: 0 1px 10px rgb(0,0,0,0.4);
+}
+.navbar-white .logo{
+  color: #ff5361;
+}
+.navbar-white li a{
+  color: #000;
+}
+.navbar-white .register-btn{
+  color: #fff;
+  background: #ff5361;
+}
+.navbar-white .fa-bars{
+  color: #000;
+}
+.navbar-white .active::after{
+  background: #ff5361;
+}
+.list__container{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.left__col{
+ flex-basis: 70%;
+}
+.right__col{
+  flex-basis: 25%;
+}
+.left__col h1{
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.house{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+.house__img{
+  flex-basis: 40%;
+}
+.house__info{
+  flex-basis: 58%;
+  color: #555;
+}
+.house__img img{
+  width: 100%;
+  height: 240px;
+  border-radius: 12px;
+}
+.house__info h3{
+  font-weight: 600;
+  color: #333;
+  font-size: 22px;
+  margin: 4px 0;
+}
+.house__info .rating{
+  color: #ff5361;
+  font-size: 18px;
+  margin: 10px 1px;
+}
+.house__price{
+  text-align: right;
+}
+.house__price h4{
+  font-size: 30px;
+}
+.house__price h4 span{
+  font-size: 14px;
+  font-weight: 600;
+}
+.sidebar{
+  border: 1px solid #999;
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+.sidebar h2{
+  font-weight: 500;  
+}
+.sidebar h3{
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+.filterbox{
+  display: flex;
+  align-items: center;
+  color: #555;
+  margin-bottom: 10px;
+}
+.filterbox p{
+  flex: 1;
+}
+.filterbox input{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.sidebar__link{
+  text-align: right;
+  margin: 20px 0;
+}
+.sidebar__link a{
+  text-decoration: none;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+.pagination .fa-chevron-left,.fa-chevron-right{
+  margin: 0px 15px;
+}
+.pagination span{
+  margin: 10px 8px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pagination .current{
+  background: #333;
+  color: #fff;
+}
+
+/************** PLACES SMALL DEVICES ****************/
+@media only screen and (max-width:800px){
+  .list__container{
+    margin-top: 150px;
+  }
+  .left__col,.right__col,.house__img,.house__info{
+    flex-basis: 100%;
+  }
+  .left__col h1{
+    font-size: 22px;
+  }
+  .house__info h3{
+    font-size: 18px;
+  }
+  .house__info .rating{
+    font-size: 16px;
+  }
+  .house__img img{
+    height: 100%;
+  }
+.pagination span{
+  margin: 8px 2px;
+  width:25px;
+  height: 25px;  
+  line-height: 25px;
+  font-size: 12px;
+}
+.house__info{
+  margin-top: 10px;
+}
+}
+
+/**************** LISTING *******************/
+.house__details{
+  padding: 0 12%;
+}
+.house__details .rating{
+  color: #ff5361;
+}
+.house__title{
+  margin-top: 50px;
+}
+.house__title h1{
+  font-weight: 600;
+}
+.house__title .row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px 0;
+}
+.house__title span{
+  margin: 0 20px;
+}
+.house__title i{
+  color: #ff5361;
+  font-size: 14px;
+}
+.gallery{
+  display: grid;
+  grid-gap: 10px;
+  
+  grid-template-areas: 'first first . .' 'first first . .';
+}
+.gallery div img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.gallery-img-1{
+  grid-area:first;
+}
+.small-details{
+  margin-top: 20px;
+}
+.small-details h4{
+  text-align: right;
+  font-size: 22px;
+}
+.line{
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0 50px;
+}
+.check-form{
+  margin: 30px 0;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  padding: 10px 50px;
+}
+.check-form label{
+  display: block;
+}
+.check-form div{
+  padding: 20px;
+}
+.check-form input{
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+.check-form button{
+  background: #ff5361;
+  border: 0;
+  outline: none;
+  color: #fff;
+  padding: 18px;
+  width: 350px;
+  border-radius: 8px;
+}
+.guest-field{
+  flex: 1;
+}
+.details-list{
+  
+  list-style: none;
+  margin: 50px 0;
+}
+.details-list li{
+  position: relative;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #555;
+}
+.details-list li span{
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.details-list .list .icon{
+  position: absolute;
+  top: 10px;
+  left: -40px;
+}
+.home__desc{
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+.map{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.map h3{
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.map b{
+  display: block;
+  margin: 15px 0;
+}
+.host img{
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.host{
+    display: flex;
+    align-items: center;
+}
+.host h2{
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.host .icon{
+  color: #ff5361;
+}
+.contact-host{
+  display: inline-block;
+  margin: 40px 0 40px 80px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  padding: 15px 50px;
+  border: 1px solid #ff5361;
+  border-radius: 8px;
+}
+/**************** LISTING SMALL DEVICES *********************/
+
+
+@media only screen and (max-width:800px){
+  .house__details{
+    margin-top: 120px;
+  }
+  .row p{
+    margin-top: 10px;
+  }
+  .gallery{
+    grid-template-areas: 'first first''. .' '. .';
+  }
+  .small-details h2{
+   font-size: 20px;
+   margin-top: 24px;
+  }
+  .small-details p{
+    margin-top:10px;
+    font-size: 15px;
+  }
+  .small-details h4{
+    margin: 10px 0;
+    text-align: left;
+  }
+  .check-form{
+    padding: 10px 30px;
+  }
+  .check-form div{
+    padding: 20px 0;
+    width: 100%;
+  }
+  .check-form input{
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .check-form button{
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  .host{
+    display: block;
+    line-height: 24px;
+  }
+  .contact-host{
+    margin: 40px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
