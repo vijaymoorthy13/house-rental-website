@@ -11,7 +11,7 @@ Scroll below to view the Preview Image of this website
     - 1 - First Page of this website is Home page, It has searchBar in the middle of Banner Section.
        - Exclusive offers about the trips with the budget section, 
        - Popular Tourist places Section, 
-       - Travellers Review about the famous tourist places,
+       - Travellers Story about the famous tourist places,
     - 2 - Second page of this website has List of Properties for Rent,
        - Primarly used as a HouseRental for Vacation. 
        - Each property in the list has price and rating.
